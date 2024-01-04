@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7e286df5a1d6746a2ea1bd86700f15, type: 3}
+  m_Name: UnitDataScriptable
+  m_EditorClassIdentifier: 
+  UnitDatas:
+  - Name: "\uBBF8\uC815\uC774"
+    UnitKind: 0
+    UnitType: 0
+    AttackDamage:
+      value: 1500
+    HP:
+      value: 18000
+    AttackSpeed:
+      value: 0.6
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.05
+  - Name: "\uB370\uBBF8\uC548"
+    UnitKind: 0
+    UnitType: 0
+    AttackDamage:
+      value: 1700
+    HP:
+      value: 16000
+    AttackSpeed:
+      value: 0.56
+    MoveSpeed:
+      value: 4.7
+    CriticalRate:
+      value: 0.09
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.05
+  - Name: "\uC8FC\uBABD"
+    UnitKind: 0
+    UnitType: 0
+    AttackDamage:
+      value: 1470
+    HP:
+      value: 16700
+    AttackSpeed:
+      value: 0.6
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.05
+  - Name: "\uBBF8\uD638"
+    UnitKind: 0
+    UnitType: 1
+    AttackDamage:
+      value: 1500
+    HP:
+      value: 16000
+    AttackSpeed:
+      value: 0.6
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1.1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.08
+  - Name: "\uC190\uC624\uACF5"
+    UnitKind: 0
+    UnitType: 2
+    AttackDamage:
+      value: 1550
+    HP:
+      value: 17000
+    AttackSpeed:
+      value: 0.6
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.11
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.13
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.08
+  - Name: "\uC5D0\uC774\uB974"
+    UnitKind: 1
+    UnitType: 1
+    AttackDamage:
+      value: 1400
+    HP:
+      value: 15000
+    AttackSpeed:
+      value: 0.55
+    MoveSpeed:
+      value: 4.7
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.08
+  - Name: "\uC26C\uB974"
+    UnitKind: 2
+    UnitType: 1
+    AttackDamage:
+      value: 1400
+    HP:
+      value: 15500
+    AttackSpeed:
+      value: 0.56
+    MoveSpeed:
+      value: 4.8
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.07
+  - Name: " \uC544\uBA55\uC2A4"
+    UnitKind: 3
+    UnitType: 0
+    AttackDamage:
+      value: 1450
+    HP:
+      value: 16000
+    AttackSpeed:
+      value: 0.58
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1.1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.06
+  - Name: "\uB85C\uBE48"
+    UnitKind: 4
+    UnitType: 0
+    AttackDamage:
+      value: 1480
+    HP:
+      value: 15600
+    AttackSpeed:
+      value: 0.6
+    MoveSpeed:
+      value: 5
+    CriticalRate:
+      value: 0.1
+    CriticalDamage:
+      value: 1.2
+    Evasion:
+      value: 0.1
+    SkillDamage:
+      value: 1
+    BossDamage:
+      value: 1
+    SkillCoolDown:
+      value: 0.08

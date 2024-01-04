@@ -1,0 +1,7 @@
+구글에서 제공하는 Sample 코드 : https://github.com/googleworkspace/dotnet-samples/blob/main/sheets/SheetsQuickstart/SheetsQuickstart.cs
+
+데이터 새로 추가시 해야하는 작업
+시트에 맞게 클래스와 스크립터블 오브젝트 만들기
+데이터 클래스는 IGoogleSheetData를 상속받아야함
+ResourceManager에 스크립터블과 데이터리스트 변수 추가하기
+GoogleSheetsUtility에서 타입에 맞기 시트ID와 GID 넣어주기

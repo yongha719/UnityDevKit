@@ -1,0 +1,6 @@
+Index	SkillTargetEntity	SkillTargetRange	SkillDelay	SkillTargetCount	AttackDamageMultiplier	IsIncrease	
+int	Enum	Enum	float	int	float	bool	
+102001	Enemy	Back	10	4	4.5	false	
+102002	Enemy	MostHP	11	2	8	false	
+102003	Enemy	Front	9.6	5	2	false	
+102004	Enemy	MostHP	9.8	1	8.5	false	

@@ -1,0 +1,6 @@
+Index	TargetCount	AttackRange	EffectPath	AttackSpeed	
+int	int	int	string	float	
+101001	1	7		1.8	
+101002	1	10		1.9	
+101003	1	6		1.78	
+101004	1	6		1.8	

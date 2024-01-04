@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb3eabb072635e498d90e585e317c12, type: 3}
+  m_Name: SkillDataScriptable
+  m_EditorClassIdentifier: 
+  SkillDatas:
+  - SkillTargetEntity: 0
+    SkillTargetRange: 0
+    SkillDelay: 10
+    SkillTargetCount: 4
+    AttackDamageMultiplier: 4.5
+    IsIncrease: 0
+  - SkillTargetEntity: 0
+    SkillTargetRange: 1
+    SkillDelay: 11
+    SkillTargetCount: 2
+    AttackDamageMultiplier: 8
+    IsIncrease: 0
+  - SkillTargetEntity: 0
+    SkillTargetRange: 2
+    SkillDelay: 9.6
+    SkillTargetCount: 5
+    AttackDamageMultiplier: 2
+    IsIncrease: 0
+  - SkillTargetEntity: 0
+    SkillTargetRange: 1
+    SkillDelay: 9.8
+    SkillTargetCount: 1
+    AttackDamageMultiplier: 8.5
+    IsIncrease: 0

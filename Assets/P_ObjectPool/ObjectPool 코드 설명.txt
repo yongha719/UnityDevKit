@@ -1,0 +1,54 @@
+ObjectPool.cs
+
+Lerp로 자동 삭제 부분 설명============
+
+오브젝트 풀 생성시 AutoDestroyCoroutine 코루틴 시작
+
+AutoDestroyCoroutine에서 하는 일
+1. 지울 수 있는지 검사 후 실행
+N초마다 조건들을 검사하며 과하게 생성되었다 판단되면
+destroyList에 지울 오브젝트들 리스트 갱신 후 지울 방법 검사 (2가지 방법)
+
+-N초는 PooledObjectData.AutoDestroyPoolDelay로 설정가능
+
+지울 방법은 PooledObjectData.shouldDestroyWithLerp로 설정가능
+ - true : Lerp로 지우기
+    - LerpDestroyCoroutine로 넘어감
+ - false : 한번에 지우기
+    - Destroy 함수로 넘어감
+
+2. 1번 반복
+---------------------------------------------------------------------
+
+LerpDestroyCoroutine에서 하는 일
+1. M초동안 기다렸다가 지움
+M초는 PooledObjectData.DelayBeforePossiblePoolIncrease 설정가능
+M초 사이에 늘어나면 지우면 안되니까 기다림
+
+2. 지우는 작업 시작
+지울 오브젝트들은 가져가지 못하게 해줌
+(CanGet false)
+
+3. 지울 크기 정하고 지우기
+내가 설정한 지울 갯수와 List에 남아있는 갯수를 비교해서 Lerp로 지울 크기를 정하고 지워줌
+(PooledObjectData.SizeToDestroy로 설정 가능)
+
+4. 지울 크기만큼 지워준 후 종료
+일정 시간을 기다린후 다 지울때까지 3번 반복
+일정 시간은 PooledObjectData.AfterDestroyDelay로 설정가능
+다 지워지면 코루틴 종료
+
+플레이어가 삭제되었을 때 그 안에 있는 총알들도 릴리즈되는 부분 설명===============
+
+CanGet 활용
+Get되었지만 아직 Release가 안된 오브젝트들은 false
+
+CalledObjectHashCode 활용
+CalledObjectHashCode가 default가 아니면 불렸는데 아직 릴리즈되지 못한 애들임
+
+그래서 불렀던 오브젝트가 릴리즈될 때 자기만의 hashcode를 넣어서 릴리즈되지 못한애들을 릴리즈 해주는 방식입니다.
+
+예외가 있을 것 같지만 떠오르는 예외가 없어서 문제 없다면 이 방법으로 가려고 합니다
+
+ObjectPool.ReleaseLostObjects 함수 참조
+

@@ -1,0 +1,7 @@
+DataBase
+Count 다그닥에 있는 IS가 들어간 Item들은 다 들고있는거 같음
+BackgroundColor 이미지 대신 넣음
+
+LevelAndTranscendenceItemData
+
+GameManager에서 InfinityScroll을 들고 있음

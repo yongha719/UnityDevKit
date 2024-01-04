@@ -1,0 +1,6 @@
+Index	Name	UnitKind	UnitType	AttackDamage	HP	
+int	string	Enum	Enum	DoubleData	DoubleData	
+200001	TestMonster1	Human	Archer	700	8000	
+200002	TestMonster2	Human	Warrior	800	6000	
+200003	TestMonster3	Human	Archer	700	6700	
+200004	TestMonster4	Human	Wizard	700	6000	
